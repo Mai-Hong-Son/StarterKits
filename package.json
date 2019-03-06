@@ -1,0 +1,31 @@
+{
+  "name": "MyStarterKits",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "cd ./android && ./gradlew app:assembleDebug && ./gradlew installDebug",
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "build": "babel src -d lib",
+    "test": "jest",
+    "lint": "eslint app/"
+  },
+  "dependencies": {
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-react-native": "^3.6.0",
+    "react": "16.6.1",
+    "react-native": "0.57.5",
+    "react-native-navigation": "^2.0.2641"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "23.6.0",
+    "eslint": "^5.15.1",
+    "jest": "23.6.0",
+    "metro-react-native-babel-preset": "0.49.1",
+    "react-test-renderer": "16.6.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
